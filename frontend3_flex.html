@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кухар Flex</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 0 auto;
+            height: 100vh;
+        }
+        .topImage {
+            flex: 0 0 20%;
+            background-color: #90EE90;
+        }
+        .middleSection {
+            display: flex;
+            flex: 0 0 55%;
+        }
+        .leftText {
+            flex: 0 0 30%;
+            background-color: #ADD8E6;
+        }
+        .rightImage {
+            flex: 0 0 70%;
+            background-color: #E0FFFF;
+        }
+        .bottomText {
+            flex: 0 0 15%;
+            background-color: #FFFFE0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="topImage">Img.</div>
+        <div class="middleSection">
+            <div class="leftText">Text</div>
+            <div class="rightImage">Img.</div>
+        </div>
+        <div class="bottomText">Text</div>
+    </div>
+</body>
+</html>
